@@ -63,15 +63,8 @@ ol { margin: 1em; }
 </section>
 
 <section>
-  <h2>Dataset Description</h2>
 
-  <p>
-    About Dataset:<br/>
-    Tobacco smoking is one of the world’s largest health problems. Over the course of the 20th century, it killed around 100 million people, most of them in today’s rich countries[1]. The health burdens of smoking are now moving from high-income to low-to-middle income countries; some estimates have suggested that one billion people could die from tobacco over the 21st century[2]. According to the Global Burden of Disease study, more than 8 million people died prematurely as a result of smoking in 2017.
-
-The data is published by the Global Burden of Disease Collaborative Network. Global Burden of Disease Study 2017 (GBD 2017) Results. Seattle, United States: Institute for Health Metrics and Evaluation (IHME), 2018 with the time span from 1990 to 2017. It consists of data related to deaths due to smoking with different age categories, countries, gender, consumption per smoker per day, income range for the smoker. http://ghdx.healthdata.org/gbd-2017
-
-  </p>
+ 
 
   <p>
     The data is available online at:
@@ -83,7 +76,14 @@ The data is published by the Global Burden of Disease Collaborative Network. Glo
 
 <section>
   <h2>Discoveries &amp; Insights</h2>
+	<h1>What's in dataset?</h1><br>
+	 <p>
+    About Dataset:<br/>
+    Tobacco smoking is one of the world’s largest health problems. Over the course of the 20th century, it killed around 100 million people, most of them in today’s rich countries[1]. The health burdens of smoking are now moving from high-income to low-to-middle income countries; some estimates have suggested that one billion people could die from tobacco over the 21st century[2]. According to the Global Burden of Disease study, more than 8 million people died prematurely as a result of smoking in 2017.
 
+The data is published by the Global Burden of Disease Collaborative Network. Global Burden of Disease Study 2017 (GBD 2017) Results. Seattle, United States: Institute for Health Metrics and Evaluation (IHME), 2018 with the time span from 1990 to 2017. It consists of data related to deaths due to smoking with different age categories, countries, gender, consumption per smoker per day, income range for the smoker. http://ghdx.healthdata.org/gbd-2017
+
+  </p>
 	<div  align="center" class='tableauPlaceholder' id='viz1575705085565' style='position: relative'>
 <noscript>
 	<a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Sm&#47;Smoking_data_explore&#47;Dashboard4&#47;1_rss.png' style='border: none' />
@@ -131,15 +131,33 @@ The data is published by the Global Burden of Disease Collaborative Network. Glo
 		vizElement.parentNode.insertBefore(scriptElement, vizElement);                
 </script>
 </div>
+	<h1> Death rates from smoking by age, over the years (from 1990 to 2016)
+</h1><br>
  <div class="entry">
+	 <p>From the above visualization, we can see the breakdown of the deaths, most deaths from smoking occurred in older populations. When we look at the breakdown of deaths from smoking by age we see that it is mainly older populations that are affected.
+
+In the visualizations, we show the death rates from smoking by age category and the share of annual deaths that occur in each age group. Here we see that death rates from smoking are much higher in people older than 70 years old, followed by those aged 50 to 69. Death rates for younger adults and children are very low. 
+
+This has also reflected in the number of deaths by age: in 2016 just over half of the people who died prematurely from smoking were older than 70 years old, and around 93% were older than 50 years.
+
+</p>
    <iframe src="https://dixipatel.github.io/Deaths-by-Smoking-Data-visualizations/" width="100%" height="787"></iframe>
   </div>
  <div class="entry">
+	 <h1>Country-wise death rate change over the years (for Age>70 Category)</h1><br>
+	 <p>With the help of the above insights, we thought of creating another interactive visualization where we can see death rates over the years for a specific category of people (i.e Age> 70). In this design, we used a dropdown where we can select the country and then a bar chart for a selected country is plotted with new values. 
+
+For this design, we had to wrangle our dataset again because needed different combinations of rows and columns from the actual dataset. We used trifacta for wrangling the data. 
+</p>
    <iframe src="https://pallaviyadkikar.github.io/Interactive2/" width="100%" height="787"></iframe>
   </div>
 
  
-	  
+	  <h1> Who smokes more? Men or Women?</h1><br>
+	 <p>With the help of the above insights, we thought of creating another interactive visualization where we can see death rates over the years for a specific category of people (i.e Age> 70). In this design, we used a dropdown where we can select the country and then a bar chart for a selected country is plotted with new values. 
+
+For this design, we had to wrangle our dataset again because needed different combinations of rows and columns from the actual dataset. We used trifacta for wrangling the data. 
+</p>
  <div  align="center" class='tableauPlaceholder' id='viz1575704287029' style='position: relative'>
 	 <noscript>
 		 <a href='#'>
@@ -237,7 +255,7 @@ else
   <div class="entry">
     <h3>Summary</h3>
     <p>
-    WRITE FINAL SUMMARY HERE.
+    If we can process more data like income range of families and expenses made we can obtain more powerful insights of how to prevent smoking. These questions serially answers about what is the trend in smoking over the years. Using this visualizations we can come up with a solution to prevent smoking which will help number of people in a positive way.
     </p>
   </div>
 </section>
